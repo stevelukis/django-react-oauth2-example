@@ -138,6 +138,7 @@ CORS_ALLOW_CREDENTIALS = True
 
 DJOSER = {
     'LOGIN_FIELD': 'email',
+    'SOCIAL_AUTH_TOKEN_STRATEGY': 'backend.strategy.TokenStrategy',
     'SOCIAL_AUTH_ALLOWED_REDIRECT_URIS': ['http://127.0.0.1:3000'],
 }
 
